@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 1340804316957426106}
   - component: {fileID: 1340804316957426107}
   - component: {fileID: 1340804316957426244}
+  - component: {fileID: 1981481957628844946}
   m_Layer: 0
   m_Name: Dragger
   m_TagString: Untagged
@@ -152,7 +153,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340804316957426246}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b18ab95f1e745634fbbf524b63dbb20b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -173,6 +174,22 @@ MonoBehaviour:
   speed: 0.13
   forwardEdge: {fileID: 1340804317598663498}
   aftEdge: {fileID: 1340804317618474795}
+--- !u!54 &1981481957628844946
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340804316957426246}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1340804316984320254
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,6 +202,7 @@ GameObject:
   - component: {fileID: 1340804316984320242}
   - component: {fileID: 1340804316984320243}
   - component: {fileID: 1340804316984320252}
+  - component: {fileID: 9014681391231767083}
   m_Layer: 0
   m_Name: Dragger (1)
   m_TagString: Untagged
@@ -227,7 +245,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340804316984320254}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b18ab95f1e745634fbbf524b63dbb20b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -248,6 +266,22 @@ MonoBehaviour:
   speed: 0.13
   forwardEdge: {fileID: 1340804317598663498}
   aftEdge: {fileID: 1340804317618474795}
+--- !u!54 &9014681391231767083
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340804316984320254}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1340804317181797161
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +294,7 @@ GameObject:
   - component: {fileID: 1340804317181797165}
   - component: {fileID: 1340804317181797166}
   - component: {fileID: 1340804317181797167}
+  - component: {fileID: 4698090664375351214}
   m_Layer: 0
   m_Name: Dragger (2)
   m_TagString: Untagged
@@ -302,7 +337,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340804317181797161}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b18ab95f1e745634fbbf524b63dbb20b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -323,6 +358,22 @@ MonoBehaviour:
   speed: 0.13
   forwardEdge: {fileID: 1340804317598663498}
   aftEdge: {fileID: 1340804317618474795}
+--- !u!54 &4698090664375351214
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340804317181797161}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1340804317447475760
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +419,7 @@ GameObject:
   - component: {fileID: 1340804317477969324}
   - component: {fileID: 1340804317477969325}
   - component: {fileID: 1340804317477969326}
+  - component: {fileID: 5644379633585315}
   m_Layer: 0
   m_Name: Dragger (4)
   m_TagString: Untagged
@@ -410,7 +462,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340804317477969320}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b18ab95f1e745634fbbf524b63dbb20b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -431,6 +483,22 @@ MonoBehaviour:
   speed: 0.13
   forwardEdge: {fileID: 1340804317598663498}
   aftEdge: {fileID: 1340804317618474795}
+--- !u!54 &5644379633585315
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340804317477969320}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1340804317598663499
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +573,7 @@ GameObject:
   - component: {fileID: 1340804317787329076}
   - component: {fileID: 1340804317787329077}
   - component: {fileID: 1340804317787329078}
+  - component: {fileID: 979437295790483683}
   m_Layer: 0
   m_Name: Dragger (5)
   m_TagString: Untagged
@@ -547,7 +616,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340804317787329072}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b18ab95f1e745634fbbf524b63dbb20b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -568,6 +637,22 @@ MonoBehaviour:
   speed: 0.13
   forwardEdge: {fileID: 1340804317598663498}
   aftEdge: {fileID: 1340804317618474795}
+--- !u!54 &979437295790483683
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340804317787329072}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1340804317893749160
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +665,7 @@ GameObject:
   - component: {fileID: 1340804317893749164}
   - component: {fileID: 1340804317893749165}
   - component: {fileID: 1340804317893749166}
+  - component: {fileID: 6846670782159888666}
   m_Layer: 0
   m_Name: Dragger (6)
   m_TagString: Untagged
@@ -622,7 +708,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340804317893749160}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b18ab95f1e745634fbbf524b63dbb20b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -643,6 +729,22 @@ MonoBehaviour:
   speed: 0.13
   forwardEdge: {fileID: 1340804317598663498}
   aftEdge: {fileID: 1340804317618474795}
+--- !u!54 &6846670782159888666
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340804317893749160}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1340804318094605295
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +798,7 @@ GameObject:
   - component: {fileID: 1340804318280092685}
   - component: {fileID: 1340804318280092686}
   - component: {fileID: 1340804318280092687}
+  - component: {fileID: 2936607101952692754}
   m_Layer: 0
   m_Name: Dragger (7)
   m_TagString: Untagged
@@ -738,7 +841,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340804318280092681}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b18ab95f1e745634fbbf524b63dbb20b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -759,6 +862,22 @@ MonoBehaviour:
   speed: 0.13
   forwardEdge: {fileID: 1340804317598663498}
   aftEdge: {fileID: 1340804317618474795}
+--- !u!54 &2936607101952692754
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340804318280092681}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1340804318390622047
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,6 +890,7 @@ GameObject:
   - component: {fileID: 1340804318390622035}
   - component: {fileID: 1340804318390622044}
   - component: {fileID: 1340804318390622045}
+  - component: {fileID: 9025043131610202543}
   m_Layer: 0
   m_Name: Dragger (3)
   m_TagString: Untagged
@@ -813,7 +933,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340804318390622047}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b18ab95f1e745634fbbf524b63dbb20b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -834,3 +954,19 @@ MonoBehaviour:
   speed: 0.13
   forwardEdge: {fileID: 1340804317598663498}
   aftEdge: {fileID: 1340804317618474795}
+--- !u!54 &9025043131610202543
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340804318390622047}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
