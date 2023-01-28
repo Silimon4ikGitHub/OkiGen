@@ -6,8 +6,8 @@ public class Bunny : MonoBehaviour
 {
     [SerializeField] private Vegetables itemScript;
     [SerializeField] private Animator myAnimator;
-    //[SerializeField] private FastIKFabric IKSkript;
-    // Start is called before the first frame update
+    [SerializeField] private GameObject handPoint;
+    // Start is called beforeFastIKFabric the first frame update
     void Awake()
     {
         myAnimator = gameObject.GetComponent<Animator>();
@@ -19,12 +19,15 @@ public class Bunny : MonoBehaviour
         
     }
 
-    private void OncollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
+        
         if (collision.gameObject.GetComponent<Vegetables>())
         {
+            Debug.Log("Here is working");
+            handPoint.SetActive(false);
             myAnimator.SetBool("isClick", true);
+            
         }
-
     }
 }

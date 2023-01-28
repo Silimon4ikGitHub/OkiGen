@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HandTarget
   - CatchPoint
+  - Vegetables
   layers:
   - Default
   - TransparentFX

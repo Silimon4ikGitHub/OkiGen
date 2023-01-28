@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 7169545974683041227}
   m_Layer: 0
   m_Name: Carot
-  m_TagString: Untagged
+  m_TagString: Vegetables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -513,9 +513,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isClicked: 0
-  speed: 1
+  speed: 0.1
+  rotationOffset: 90
   bunnyHand: {fileID: 0}
-  test: {fileID: 0}
+  myRB: {fileID: 0}
 --- !u!1 &8780215166887333677
 GameObject:
   m_ObjectHideFlags: 0

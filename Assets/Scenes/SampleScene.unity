@@ -533,18 +533,6 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6646984820703919806, guid: cd3edd9f871bb8446b475ce2a036d709, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.92649287
-      objectReference: {fileID: 0}
-    - target: {fileID: 6646984820703919806, guid: cd3edd9f871bb8446b475ce2a036d709, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.8382125
-      objectReference: {fileID: 0}
-    - target: {fileID: 6646984820703919806, guid: cd3edd9f871bb8446b475ce2a036d709, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.0539658
-      objectReference: {fileID: 0}
-    - target: {fileID: 6646984820703919806, guid: cd3edd9f871bb8446b475ce2a036d709, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.188
       objectReference: {fileID: 0}
@@ -889,25 +877,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7312e4c6dabe70d4dbebabbbd675f02d, type: 3}
---- !u!1 &1921639894 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2351459505949672459, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
-  m_PrefabInstance: {fileID: 3198512481618526822}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1921639898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921639894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a04cfa52dddf48429cab05e99d713aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemScript: {fileID: 0}
-  myAnimator: {fileID: 0}
 --- !u!1 &1954150016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,7 +995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1340804316957426244, guid: 91e93fe4ecaf717439d6f7fa3373bef0, type: 3}
       propertyPath: speed
-      value: 0.117
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 1340804316957426244, guid: 91e93fe4ecaf717439d6f7fa3373bef0, type: 3}
       propertyPath: conveyorRB
@@ -1136,10 +1105,6 @@ PrefabInstance:
     - target: {fileID: 2351459505949672459, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
       propertyPath: m_Name
       value: Bunny
-      objectReference: {fileID: 0}
-    - target: {fileID: 2550839192694908752, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3164305794357845681, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
       propertyPath: m_RootOrder
