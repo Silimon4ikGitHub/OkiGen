@@ -17,7 +17,7 @@ public class ConveyorPhysics : MonoBehaviour
     void ConveyorPhysicsOn()
     {
         Vector3 pos = conveyorRB.position;
-        conveyorRB.position += Vector3.back * speed * Time.fixedDeltaTime;
+        conveyorRB.position += Vector3.right * speed * Time.fixedDeltaTime;
         conveyorRB.MovePosition(pos);
     }
 }

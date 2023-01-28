@@ -223,6 +223,37 @@ Transform:
   m_Father: {fileID: 2988011117075884341}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1037205932919969878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2414839302900934934}
+  m_Layer: 0
+  m_Name: VegetavleCatchPoint
+  m_TagString: CatchPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2414839302900934934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037205932919969878}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00009, y: -0.0017812513, z: -0.00126}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3142800772948552859}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281269316817390583
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3164305794357845681}
   - component: {fileID: 3198512480892992538}
+  - component: {fileID: 1432107455409292204}
   m_Layer: 0
   m_Name: Bunny
   m_TagString: Untagged
@@ -617,6 +649,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &1432107455409292204
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351459505949672459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.006
+  m_Center: {x: -0.01, y: 0.025, z: 0.015}
 --- !u!1 &2453627121657810991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,7 +1578,8 @@ Transform:
   m_LocalPosition: {x: -0.00917, y: 0.0263, z: 0.0143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2414839302900934934}
   m_Father: {fileID: 3164305794357845681}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1549,9 +1595,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56069daccefad1340a8c6aa02866d78f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetZ: 0.48
+  offsetZ: -0.5
   offsetX: 4
-  offsetY: 4
+  offsetY: 3
   mainCamera: {fileID: 0}
   centerPosition: {x: 0, y: 1.1, z: 0}
 --- !u!1 &8739693468094991825
