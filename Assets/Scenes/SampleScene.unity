@@ -1098,6 +1098,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 823892319, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 963194227}
     - target: {fileID: 2351459505949672459, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
       propertyPath: m_Name
       value: Bunny

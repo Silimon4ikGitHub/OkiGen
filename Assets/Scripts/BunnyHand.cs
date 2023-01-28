@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class BunnyHand : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float offsetZ;
+    [SerializeField] private float offsetX;
+    [SerializeField] private float offsetY;
+    [SerializeField] private Camera mainCamera;
+    [SerializeField] private Vector3 centerPosition;
+    private Vector3 myPosition;
+    private Vector3 screenMousePosition;
+    private Vector3 worldMousePosition;
+
+    void FixedUpdate()
     {
-        
+        MoveHandOnMouse();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void MoveHandOnMouse()
     {
-        
+        transform.position = myPosition;
+        screenMousePosition = Input.mousePosition;
+        screenMousePosition.z = Camera.main.nearClipPlane;
+        worldMousePosition = Camera.main.ScreenToWorldPoint(screenMousePosition) - centerPosition;
+        myPosition.z = offsetZ;
+        myPosition.x = worldMousePosition.x * offsetX;
+        myPosition.y = worldMousePosition.y * offsetY;
     }
 }
