@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ConveyerTexture
+  m_Name: basket_obj_Material__2_Diffuse
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -41,9 +41,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e4f14b52e9a9cb845a3b5ff2178a3221, type: 3}
+        m_Texture: {fileID: 2800000, guid: 20119d3dd1da322428bc2b3f93cd4077, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: -0.548, y: 0}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -63,9 +63,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.68
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 0.76
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
