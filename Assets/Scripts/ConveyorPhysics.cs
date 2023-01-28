@@ -7,6 +7,7 @@ public class ConveyorPhysics : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private Transform forwardEdge;
     [SerializeField] private Transform aftEdge;
+    [SerializeField] private Rigidbody conveyorRB;
 
     void Update()
     {
@@ -15,11 +16,8 @@ public class ConveyorPhysics : MonoBehaviour
     
     void ConveyorPhysicsOn()
     {
-        var step = speed * Time.deltaTime;
-        transform.localPosition = Vector3.MoveTowards(transform.localPosition, forwardEdge.localPosition, step);
-        if(transform.localPosition == forwardEdge.localPosition)
-        {
-            transform.localPosition = aftEdge.localPosition;
-        }
+        Vector3 pos = conveyorRB.position;
+        conveyorRB.position += Vector3.back * speed * Time.fixedDeltaTime;
+        conveyorRB.MovePosition(pos);
     }
 }
