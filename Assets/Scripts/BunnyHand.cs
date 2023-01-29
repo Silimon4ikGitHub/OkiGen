@@ -8,7 +8,8 @@ public class BunnyHand : MonoBehaviour
     [SerializeField] private float offsetZ;
     [SerializeField] private float offsetX;
     [SerializeField] private float offsetY;
-    [SerializeField] private Camera mainCamera;
+    [SerializeField] private Material effectMaterial;
+    [SerializeField] private GameObject effectObject;
     [SerializeField] private Vector3 centerPosition;
     [SerializeField] private Animator myAnimator;
     [SerializeField] private FastIKFabric fastIK;
@@ -49,6 +50,7 @@ public class BunnyHand : MonoBehaviour
             Invoke("SwitchOnFastIK", 1.0f);
             vegetableScript.isClicked = false;
             MoveVegetableToBasket(catchedVegetable);
+            effectObject.SetActive(true);
             
         }
     }
@@ -58,6 +60,7 @@ public class BunnyHand : MonoBehaviour
         fastIK.enabled = true;
         myCollider.enabled = true;
         myAnimator.SetBool("isClick", false);
+        effectObject.SetActive(false);
     }
     private void SwitchOffFastIK()
     {
