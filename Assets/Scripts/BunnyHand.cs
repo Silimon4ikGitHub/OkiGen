@@ -46,7 +46,7 @@ public class BunnyHand : MonoBehaviour
             SwitchOffFastIK();
             myAnimator.SetBool("isClick", true);
             myCollider.enabled = false;
-            Invoke("SwitchOnFastIK", 2.0f);
+            Invoke("SwitchOnFastIK", 1.0f);
             vegetableScript.isClicked = false;
             MoveVegetableToBasket(catchedVegetable);
             
@@ -67,15 +67,13 @@ public class BunnyHand : MonoBehaviour
 
     private void MoveVegetableToBasket(GameObject vegetable)
     {
-
-
         bool isInBasket = false;
         
         if(vegetable.transform.position == basket.position)
         {
             isInBasket = true;
         }
-        if (isInBasket == false)
+        if (!isInBasket)
         {
             vegetable.transform.position = Vector3.MoveTowards(vegetable.transform.position, basket.position, 1);
         }
