@@ -21,7 +21,9 @@ public class VegetableSpawner : MonoBehaviour
     {
         Quaternion randomRotation = new Quaternion (Random.Range(0,180),Random.Range(0,180),Random.Range(0,180), 0);
         int randomObject = Random.Range(0, vegetablePrefabs.Length);
-        var pin = Instantiate( vegetablePrefabs[randomObject], spawnerPoint.position, randomRotation, spawnerPoint);
+        var vegetable = Instantiate( vegetablePrefabs[randomObject], spawnerPoint.position, randomRotation, spawnerPoint);
+        Vegetables vegetableScript = vegetable.GetComponent<Vegetables>();
+        vegetableScript.myTypeIndex = randomObject;
     }
 
     private void SpawnWithDelay()

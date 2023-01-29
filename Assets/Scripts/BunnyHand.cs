@@ -51,7 +51,6 @@ public class BunnyHand : MonoBehaviour
             vegetableScript.isClicked = false;
             MoveVegetableToBasket(catchedVegetable);
             effectObject.SetActive(true);
-            
         }
     }
 

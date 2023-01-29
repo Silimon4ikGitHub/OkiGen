@@ -5,6 +5,7 @@ using UnityEngine;
 public class Vegetables : MonoBehaviour
 {
     public bool isClicked;
+    public int myTypeIndex;
     [SerializeField] private float speed;
     [SerializeField] private float rotationOffset = 270f;
     [SerializeField] private Transform bunnyHand;
