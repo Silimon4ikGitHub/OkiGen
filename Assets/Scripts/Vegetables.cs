@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Vegetables : MonoBehaviour
 {
-    [SerializeField] private bool isClicked;
+    public bool isClicked;
     [SerializeField] private float speed;
     [SerializeField] private float rotationOffset = 270f;
     [SerializeField] private Transform bunnyHand;
@@ -22,6 +22,10 @@ public class Vegetables : MonoBehaviour
         {
             MoveInHand();
         }
+        if (!isClicked)
+        {
+            myRB.useGravity = true;
+        }
     }
 
     private void OnMouseDown() 
@@ -34,5 +38,6 @@ public class Vegetables : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, bunnyHand.position, speed);
         transform.rotation = Quaternion.Euler(0,0,rotationOffset);
         myRB.useGravity = false;
+        
     }
 }

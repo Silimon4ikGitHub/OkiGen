@@ -23,12 +23,12 @@ public class Bunny : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         
-        if (handCollider.gameObject.GetComponent<Vegetables>())
-        {
-            Debug.Log("Here is working");
-            handPoint.SetActive(false);
-            myAnimator.SetBool("isClick", true);
-            
-        }
+        //if (handCollider.gameObject.GetComponent<Vegetables>())
+       // {
+        //    Debug.Log("Here is working");
+       //     handPoint.SetActive(false);
+       //     myAnimator.SetBool("isClick", true);
+       //     
+        //}
     }
 }

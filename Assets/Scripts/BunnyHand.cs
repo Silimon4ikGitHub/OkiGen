@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DitzelGames.FastIK;
 
 public class BunnyHand : MonoBehaviour
 {
@@ -9,6 +10,11 @@ public class BunnyHand : MonoBehaviour
     [SerializeField] private float offsetY;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Vector3 centerPosition;
+    [SerializeField] private Animator myAnimator;
+    [SerializeField] private FastIKFabric fastIK;
+    [SerializeField] private Collider myCollider;
+    [SerializeField] private Transform basket;
+    [SerializeField] private Vegetables vegetableScript;
     private Vector3 myPosition;
     private Vector3 screenMousePosition;
     private Vector3 worldMousePosition;
@@ -27,5 +33,51 @@ public class BunnyHand : MonoBehaviour
         myPosition.z = offsetZ;
         myPosition.x = worldMousePosition.x * offsetX;
         myPosition.y = worldMousePosition.y * offsetY;
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        GameObject catchedVegetable = collision.gameObject;
+        vegetableScript = collision.gameObject.GetComponent<Vegetables>();
+        
+        if (collision.gameObject.GetComponent<Vegetables>())
+        {
+            Debug.Log("Here is working");
+            SwitchOffFastIK();
+            myAnimator.SetBool("isClick", true);
+            myCollider.enabled = false;
+            Invoke("SwitchOnFastIK", 2.0f);
+            vegetableScript.isClicked = false;
+            MoveVegetableToBasket(catchedVegetable);
+            
+        }
+    }
+
+    private void SwitchOnFastIK()
+    {
+        fastIK.enabled = true;
+        myCollider.enabled = true;
+        myAnimator.SetBool("isClick", false);
+    }
+    private void SwitchOffFastIK()
+    {
+        fastIK.enabled = false;
+        
+    }
+
+    private void MoveVegetableToBasket(GameObject vegetable)
+    {
+
+
+        bool isInBasket = false;
+        
+        if(vegetable.transform.position == basket.position)
+        {
+            isInBasket = true;
+        }
+        if (isInBasket == false)
+        {
+            vegetable.transform.position = Vector3.MoveTowards(vegetable.transform.position, basket.position, 1);
+        }
     }
 }
