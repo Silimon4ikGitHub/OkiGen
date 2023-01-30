@@ -5,20 +5,28 @@ using TMPro;
 
 public class TextManager : MonoBehaviour
 {
-    [SerializeField] private string vegetablesCollected;
-    [SerializeField] private string vegetablesNeeded;
-    [SerializeField] private int currentTextIndex;
-    [SerializeField] private GameObject[] questTest;
+    [SerializeField] private TextMeshProUGUI itemCollectedText;
+    [SerializeField] private LevelManager levelManagerScript;
+    [SerializeField] private int itemToCllect;
+    public int questItemCollected;
+
     
     void Awake()
     {
-        currentTextIndex = Random.Range(0, questTest.Length);
-        questTest[currentTextIndex].SetActive(true);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        itemToCllect = levelManagerScript.itemTocollectCount;
+        ShowCollectedItemsCount();
+    }
+
+    private void ShowCollectedItemsCount()
+    {
+        itemToCllect.ToString();
+        questItemCollected.ToString();
+        itemCollectedText.text = questItemCollected + "/" + itemToCllect;
     }
 }

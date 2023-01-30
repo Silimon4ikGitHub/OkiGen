@@ -16,9 +16,11 @@ public class BunnyHand : MonoBehaviour
     [SerializeField] private Collider myCollider;
     [SerializeField] private Transform basket;
     [SerializeField] private Vegetables vegetableScript;
+    [SerializeField] private LevelManager levelManagerScript;
     private Vector3 myPosition;
     private Vector3 screenMousePosition;
     private Vector3 worldMousePosition;
+    public int catchedItemIndex;
 
     void FixedUpdate()
     {
@@ -39,18 +41,23 @@ public class BunnyHand : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         GameObject catchedVegetable = collision.gameObject;
-        vegetableScript = collision.gameObject.GetComponent<Vegetables>();
+        vegetableScript = catchedVegetable.GetComponent<Vegetables>();
         
-        if (collision.gameObject.GetComponent<Vegetables>())
+        if (catchedVegetable.GetComponent<Vegetables>())
         {
-            Debug.Log("Here is working");
             SwitchOffFastIK();
             myAnimator.SetBool("isClick", true);
             myCollider.enabled = false;
             Invoke("SwitchOnFastIK", 1.0f);
+
             vegetableScript.isClicked = false;
+
             MoveVegetableToBasket(catchedVegetable);
+
             effectObject.SetActive(true);
+
+            catchedItemIndex = vegetableScript.myTypeIndex;
+            levelManagerScript.itemCollectedCount++;
         }
     }
 
