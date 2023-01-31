@@ -9,10 +9,12 @@ public class Vegetables : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float rotationOffset = 270f;
     [SerializeField] private Transform bunnyHand;
+    [SerializeField] private Transform disappearPoint;
     [SerializeField] private Rigidbody myRB;
     void Awake()
     {
         bunnyHand = GameObject.FindGameObjectWithTag("CatchPoint").transform;
+        disappearPoint = GameObject.FindGameObjectWithTag("DisappearPoint").transform;
         myRB = gameObject.GetComponent<Rigidbody>();
     }
 
@@ -27,6 +29,8 @@ public class Vegetables : MonoBehaviour
         {
             myRB.useGravity = true;
         }
+
+        DissapearInEnd();
     }
 
     private void OnMouseDown() 
@@ -40,5 +44,13 @@ public class Vegetables : MonoBehaviour
         transform.rotation = Quaternion.Euler(0,0,rotationOffset);
         myRB.useGravity = false;
         
+    }
+
+    private void DissapearInEnd()
+    {
+        if (transform.position.x < disappearPoint.position.x)
+        {
+            Destroy(gameObject);
+        }
     }
 }

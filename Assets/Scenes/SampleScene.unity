@@ -343,7 +343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372229292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.292, y: 3, z: -1.079}
+  m_LocalPosition: {x: 1.982, y: 2, z: -0.781}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -529,6 +529,7 @@ MonoBehaviour:
   speed: 0.1
   rotationOffset: 270
   bunnyHand: {fileID: 0}
+  disappearPoint: {fileID: 1432141554}
   myRB: {fileID: 0}
 --- !u!136 &752119323
 CapsuleCollider:
@@ -1729,6 +1730,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4992880732141481591, guid: 0b6b2cce366473b4db7d67185eea8e58, type: 3}
   m_PrefabInstance: {fileID: 3199875357907838831}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1432141553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432141554}
+  m_Layer: 0
+  m_Name: DisappearPoint
+  m_TagString: DisappearPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1432141554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432141553}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.292, y: 0.599, z: -0.804}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1487927567 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1981481957628844946, guid: 91e93fe4ecaf717439d6f7fa3373bef0, type: 3}
@@ -1992,6 +2024,7 @@ MonoBehaviour:
   speed: 0.1
   rotationOffset: 270
   bunnyHand: {fileID: 0}
+  disappearPoint: {fileID: 1432141554}
   myRB: {fileID: 0}
 --- !u!65 &1714119193
 BoxCollider:
