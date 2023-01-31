@@ -11,11 +11,13 @@ public class BunnyHand : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private Material effectMaterial;
     [SerializeField] private GameObject effectObject;
+    [SerializeField] private GameObject levelPassedText;
     [SerializeField] private Vector3 centerPosition;
     [SerializeField] private Animator myAnimator;
+    [SerializeField] private Animator cameraAnimator;
     [SerializeField] private FastIKFabric fastIK;
     [SerializeField] private Collider myCollider;
-    [SerializeField] private Transform basket;
+    [SerializeField] private GameObject basket;
     [SerializeField] private Vegetables vegetableScript;
     [SerializeField] private LevelManager levelManagerScript;
     private Vector3 myPosition;
@@ -84,13 +86,22 @@ public class BunnyHand : MonoBehaviour
     {
         bool isInBasket = false;
         
-        if(vegetable.transform.position == basket.position)
+        if(vegetable.transform.position == basket.transform.position)
         {
             isInBasket = true;
         }
         if (!isInBasket)
         {
-            vegetable.transform.position = Vector3.MoveTowards(vegetable.transform.position, basket.position, speed);
+            vegetable.transform.position = Vector3.MoveTowards(vegetable.transform.position, basket.transform.position, speed);
         }
+    }
+
+    public void FinishLevel()
+    {
+        myAnimator.SetBool("isDance", true);
+        cameraAnimator.SetBool("isQuestComplete", true);
+        levelPassedText.SetActive(true);
+        SwitchOffFastIK();
+        basket.SetActive(false);
     }
 }

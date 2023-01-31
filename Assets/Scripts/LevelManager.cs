@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
 
         if (itemCollectedCount >= itemTocollectCount)
         {
-            RestartLevel();
+            bunnyHandScript.FinishLevel();
         }
             
         
