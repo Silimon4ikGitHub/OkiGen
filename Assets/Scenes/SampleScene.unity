@@ -1740,8 +1740,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1432141554}
   m_Layer: 0
-  m_Name: DisappearPoint
-  m_TagString: DisappearPoint
+  m_Name: DestroyPoint
+  m_TagString: DestroyPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

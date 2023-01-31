@@ -14,7 +14,7 @@ public class Vegetables : MonoBehaviour
     void Awake()
     {
         bunnyHand = GameObject.FindGameObjectWithTag("CatchPoint").transform;
-        disappearPoint = GameObject.FindGameObjectWithTag("DisappearPoint").transform;
+        disappearPoint = GameObject.FindGameObjectWithTag("DestroyPoint").transform;
         myRB = gameObject.GetComponent<Rigidbody>();
     }
 

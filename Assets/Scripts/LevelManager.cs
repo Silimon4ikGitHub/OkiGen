@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -21,10 +22,16 @@ public class LevelManager : MonoBehaviour
         itemTocollectCount = questItemMaxCount[questIndex];
     }
 
-    // Update is called once per frame
     void Update()
     {
         AddQuestItemCount();
+
+        if (itemCollectedCount >= itemTocollectCount)
+        {
+            //RestartLevel();
+        }
+            
+        
     }
 
     private void AddQuestItemCount()
@@ -33,5 +40,10 @@ public class LevelManager : MonoBehaviour
         {
             textScript.questItemCollected = itemCollectedCount;
         }
+    }
+
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

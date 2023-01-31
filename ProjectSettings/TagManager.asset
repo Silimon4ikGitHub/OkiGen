@@ -7,7 +7,7 @@ TagManager:
   - HandTarget
   - CatchPoint
   - Vegetables
-  - DisappearPoint
+  - DestroyPoint
   layers:
   - Default
   - TransparentFX
