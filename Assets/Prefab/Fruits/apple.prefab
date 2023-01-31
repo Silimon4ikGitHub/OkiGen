@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7657866170424456291}
   - component: {fileID: 4796645766246649129}
   - component: {fileID: 8337466691409701309}
+  - component: {fileID: 5592316261597579087}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5592316261597579087
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508736434339538776}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.69, y: 1.02, z: 0.53}
+  m_Center: {x: -0.007186502, y: 0, z: 0.0002540052}
 --- !u!1 &7601460630609731457
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +108,6 @@ GameObject:
   - component: {fileID: 7076844447755683131}
   - component: {fileID: 7591642505329253592}
   - component: {fileID: 2929862923188549008}
-  - component: {fileID: 5089929275328678863}
   - component: {fileID: 4333124736397077212}
   m_Layer: 0
   m_Name: apple
@@ -151,19 +164,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.56
   m_Center: {x: -0.007186502, y: 0.01158601, z: 0.0002540052}
---- !u!65 &5089929275328678863
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7601460630609731457}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.69, y: 1.02, z: 0.53}
-  m_Center: {x: -0.007186502, y: 0, z: 0.0002540052}
 --- !u!54 &4333124736397077212
 Rigidbody:
   m_ObjectHideFlags: 0

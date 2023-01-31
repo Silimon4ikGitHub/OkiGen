@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 235726684236146603}
   - component: {fileID: 2394224832139907137}
   - component: {fileID: 5136186918838328395}
+  - component: {fileID: 2393151631371640168}
   m_Layer: 0
   m_Name: Orange
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2393151631371640168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949757157945343518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.1, y: 43, z: 4.1}
+  m_Center: {x: 0, y: 27, z: 0}
 --- !u!1 &4233811979000010803
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +108,6 @@ GameObject:
   - component: {fileID: 3569759373861749385}
   - component: {fileID: 4057063680494580741}
   - component: {fileID: 6528873212809531600}
-  - component: {fileID: 1468698094333374322}
   - component: {fileID: 2354374888813898345}
   m_Layer: 0
   m_Name: Orange
@@ -154,19 +167,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1468698094333374322
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4233811979000010803}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.1, y: 43, z: 4.1}
-  m_Center: {x: 0, y: 27, z: 0}
 --- !u!135 &2354374888813898345
 SphereCollider:
   m_ObjectHideFlags: 0

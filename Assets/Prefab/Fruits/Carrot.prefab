@@ -95,7 +95,6 @@ GameObject:
   - component: {fileID: 3789163465260060186}
   - component: {fileID: 954661886673001589}
   - component: {fileID: 1238639474624582184}
-  - component: {fileID: 5879094403854622533}
   m_Layer: 0
   m_Name: Carrot
   m_TagString: Untagged
@@ -169,19 +168,6 @@ CapsuleCollider:
   m_Height: 6.73
   m_Direction: 1
   m_Center: {x: 0, y: 2.16, z: 0}
---- !u!65 &5879094403854622533
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580919478943799874}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.3, y: 4.43, z: 0.97}
-  m_Center: {x: 0, y: 7.13, z: 0}
 --- !u!1 &5320758872443402933
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,6 +179,7 @@ GameObject:
   - component: {fileID: 476285470877134058}
   - component: {fileID: 4932631493859381072}
   - component: {fileID: 5549979227969582136}
+  - component: {fileID: 2076338572923797408}
   m_Layer: 0
   m_Name: Circle_Circle_leaf
   m_TagString: Untagged
@@ -265,3 +252,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2076338572923797408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5320758872443402933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 4.43, z: 0.97}
+  m_Center: {x: 0, y: 7.13, z: 0}

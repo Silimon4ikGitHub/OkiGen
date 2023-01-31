@@ -2049,6 +2049,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 823892319, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 823892319, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 963194227}
@@ -2451,6 +2455,18 @@ PrefabInstance:
     - target: {fileID: 8952820563834890850, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.80515444
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010745750166037263, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010745750166037263, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 216
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010745750166037263, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 9044720835330165810, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

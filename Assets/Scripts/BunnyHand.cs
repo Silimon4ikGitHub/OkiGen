@@ -8,6 +8,7 @@ public class BunnyHand : MonoBehaviour
     [SerializeField] private float offsetZ;
     [SerializeField] private float offsetX;
     [SerializeField] private float offsetY;
+    [SerializeField] private float speed;
     [SerializeField] private Material effectMaterial;
     [SerializeField] private GameObject effectObject;
     [SerializeField] private Vector3 centerPosition;
@@ -57,7 +58,12 @@ public class BunnyHand : MonoBehaviour
             effectObject.SetActive(true);
 
             catchedItemIndex = vegetableScript.myTypeIndex;
-            levelManagerScript.itemCollectedCount++;
+
+            if(catchedItemIndex == levelManagerScript.questIndex)
+            {
+                levelManagerScript.itemCollectedCount++;
+            }
+            
         }
     }
 
@@ -84,7 +90,7 @@ public class BunnyHand : MonoBehaviour
         }
         if (!isInBasket)
         {
-            vegetable.transform.position = Vector3.MoveTowards(vegetable.transform.position, basket.position, 1);
+            vegetable.transform.position = Vector3.MoveTowards(vegetable.transform.position, basket.position, speed);
         }
     }
 }

@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private int itemCollect;
-
     [SerializeField] private TextManager textScript;
     [SerializeField] private BunnyHand bunnyHandScript;
     [SerializeField] private GameObject[] questTest;
@@ -28,7 +27,7 @@ public class LevelManager : MonoBehaviour
 
         if (itemCollectedCount >= itemTocollectCount)
         {
-            //RestartLevel();
+            RestartLevel();
         }
             
         
@@ -36,10 +35,9 @@ public class LevelManager : MonoBehaviour
 
     private void AddQuestItemCount()
     {
-        if (bunnyHandScript.catchedItemIndex == questIndex)
-        {
+        
             textScript.questItemCollected = itemCollectedCount;
-        }
+        
     }
 
     private void RestartLevel()
