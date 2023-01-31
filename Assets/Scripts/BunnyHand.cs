@@ -12,6 +12,7 @@ public class BunnyHand : MonoBehaviour
     [SerializeField] private Material effectMaterial;
     [SerializeField] private GameObject effectObject;
     [SerializeField] private GameObject levelPassedText;
+    [SerializeField] private GameObject nextLevelButton;
     [SerializeField] private Vector3 centerPosition;
     [SerializeField] private Animator myAnimator;
     [SerializeField] private Animator cameraAnimator;
@@ -101,6 +102,7 @@ public class BunnyHand : MonoBehaviour
         myAnimator.SetBool("isDance", true);
         cameraAnimator.SetBool("isQuestComplete", true);
         levelPassedText.SetActive(true);
+        nextLevelButton.SetActive(true);
         SwitchOffFastIK();
         basket.SetActive(false);
     }
