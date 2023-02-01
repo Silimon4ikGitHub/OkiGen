@@ -9,21 +9,21 @@ public class BunnyHand : MonoBehaviour
     [SerializeField] private float offsetX;
     [SerializeField] private float offsetY;
     [SerializeField] private float speed;
-    [SerializeField] private Material effectMaterial;
-    [SerializeField] private GameObject effectObject;
+    [SerializeField] private GameObject takingItemEffect;
     [SerializeField] private GameObject levelPassedText;
     [SerializeField] private GameObject nextLevelButton;
-    [SerializeField] private Vector3 centerPosition;
+    [SerializeField] private GameObject basket;
+    [SerializeField] private Material effectMaterial;
     [SerializeField] private Animator myAnimator;
     [SerializeField] private Animator cameraAnimator;
-    [SerializeField] private FastIKFabric fastIK;
+    [SerializeField] private Vector3 centerPosition;
     [SerializeField] private Collider myCollider;
-    [SerializeField] private GameObject basket;
-    [SerializeField] private Vegetables vegetableScript;
+    [SerializeField] private FastIKFabric fastIK;
     [SerializeField] private LevelManager levelManagerScript;
     private Vector3 myPosition;
     private Vector3 screenMousePosition;
     private Vector3 worldMousePosition;
+    private Vegetables vegetableScript;
     public int catchedItemIndex;
 
     void FixedUpdate()
@@ -58,7 +58,7 @@ public class BunnyHand : MonoBehaviour
 
             MoveVegetableToBasket(catchedVegetable);
 
-            effectObject.SetActive(true);
+            takingItemEffect.SetActive(true);
 
             catchedItemIndex = vegetableScript.myTypeIndex;
 
@@ -66,7 +66,6 @@ public class BunnyHand : MonoBehaviour
             {
                 levelManagerScript.itemCollectedCount++;
             }
-            
         }
     }
 
@@ -75,12 +74,11 @@ public class BunnyHand : MonoBehaviour
         fastIK.enabled = true;
         myCollider.enabled = true;
         myAnimator.SetBool("isClick", false);
-        effectObject.SetActive(false);
+        takingItemEffect.SetActive(false);
     }
     private void SwitchOffFastIK()
     {
         fastIK.enabled = false;
-        
     }
 
     private void MoveVegetableToBasket(GameObject vegetable)
