@@ -5,15 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] private int itemCollect;
+    [SerializeField] private int[] questItemMaxCount;
+    [SerializeField] private GameObject[] questTest;
     [SerializeField] private TextManager textScript;
     [SerializeField] private BunnyHand bunnyHandScript;
-    [SerializeField] private GameObject[] questTest;
-    public int itemCollectedCount;
-    [SerializeField] private int[] questItemIndex;
-    [SerializeField] private int[] questItemMaxCount;
+
     public int questIndex;
     public int itemTocollectCount;
+    public int itemCollectedCount;
+
     void Awake()
     {
         questIndex = Random.Range(0, questTest.Length);
@@ -29,15 +29,11 @@ public class LevelManager : MonoBehaviour
         {
             bunnyHandScript.FinishLevel();
         }
-            
-        
     }
 
     private void AddQuestItemCount()
     {
-        
             textScript.questItemCollected = itemCollectedCount;
-        
     }
 
     public void RestartLevel()

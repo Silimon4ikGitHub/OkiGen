@@ -355,20 +355,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6944ad9760acb0f48963f9d658c71411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemCollect: 0
-  textScript: {fileID: 1849913153}
-  bunnyHandScript: {fileID: 621727499}
+  questItemMaxCount: 0300000002000000050000000800000004000000
   questTest:
   - {fileID: 1746688889}
   - {fileID: 914413994}
   - {fileID: 975021038}
   - {fileID: 1605726893}
   - {fileID: 890388856}
-  itemCollectedCount: 0
-  questItemIndex: 0100000002000000030000000400000005000000
-  questItemMaxCount: 0300000002000000050000000800000004000000
+  textScript: {fileID: 1849913153}
+  bunnyHandScript: {fileID: 621727499}
   questIndex: 0
   itemTocollectCount: 0
+  itemCollectedCount: 0
 --- !u!4 &336587635
 Transform:
   m_ObjectHideFlags: 0
@@ -428,6 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba715f41974ef3046a848a9f02bac794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnDelay: 1
   vegetablePrefabs:
   - {fileID: 7601460630609731457, guid: 0a17d452a4c8ca440bf082694ced9a8a, type: 3}
   - {fileID: 5724967637354139977, guid: 42db2c0a219d5434bbd807d082996377, type: 3}
@@ -435,7 +434,6 @@ MonoBehaviour:
   - {fileID: 1580919478943799874, guid: 7a9cea0fd1c0fbb44bca061773df2b52, type: 3}
   - {fileID: 4233811979000010803, guid: 1e232c35b2652d048b5db27d6421aa3b, type: 3}
   spawnerPoint: {fileID: 372229293}
-  spawnDelay: 1
 --- !u!114 &621727499 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 823892319, guid: 8cd5babff10c309449b45dc393171ba3, type: 3}
@@ -2246,9 +2244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef2e3f32b5cd38449605ed4ce39782a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemToCllect: 0
   itemCollectedText: {fileID: 1137668820}
   levelManagerScript: {fileID: 336587634}
-  itemToCllect: 0
   questItemCollected: 0
 --- !u!1 &1954150016
 GameObject:
@@ -2354,6 +2352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1340804316750044804, guid: 91e93fe4ecaf717439d6f7fa3373bef0, type: 3}
+      propertyPath: conveyorSpeed
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 1340804316957426106, guid: 91e93fe4ecaf717439d6f7fa3373bef0, type: 3}
       propertyPath: m_Material
       value: 
@@ -2368,7 +2370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1340804316957426244, guid: 91e93fe4ecaf717439d6f7fa3373bef0, type: 3}
       propertyPath: speed
-      value: 0.19
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 1340804316957426244, guid: 91e93fe4ecaf717439d6f7fa3373bef0, type: 3}
       propertyPath: conveyorRB

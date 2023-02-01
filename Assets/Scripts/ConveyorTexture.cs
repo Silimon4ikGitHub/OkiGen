@@ -9,10 +9,10 @@ public class ConveyorTexture : MonoBehaviour
 
     void FixedUpdate()
     {
-        ShiftTexture();
+        ConveyorShiftTexture();
     }
 
-    private void ShiftTexture()
+    private void ConveyorShiftTexture()
     {
         conveyorMaterial.mainTextureOffset = new Vector2 (Time.time * conveyorSpeed * Time.deltaTime, 0f);
     }

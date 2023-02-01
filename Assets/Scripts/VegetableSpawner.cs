@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class VegetableSpawner : MonoBehaviour
 {
+    [SerializeField] private float spawnDelay;
     [SerializeField] private GameObject[] vegetablePrefabs;
     [SerializeField] private Transform spawnerPoint;
-    [SerializeField] private float spawnDelay;
     private float _timeCounter;
 
     void FixedUpdate()
     {
         _timeCounter += Time.deltaTime;
         
-            SpawnWithDelay();
-        
+        SpawnWithDelay();
     }
 
     private void SpawnVegetable()
